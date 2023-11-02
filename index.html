@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanokpong's Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/34a480d6fb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src='images/logo5.png' class="logo" >
+                <ul id="sidemenu">
+                    <li><a href='#header'>Home</a></li>
+                    <li><a href='#About'>About me</a></li>
+                    <li><a href='#survices'>My Survices</a></li>
+                    <li><a href='#Portfolio'>My work</a></li>
+                    <li><a href='#activities'>Activities</a></li>
+                    <li><a href='#Contact'>Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>You are the <span>{css} </span> to my <span><./HTML></span></p>
+                <h1>สวัสดีครับ! ผม <br><span>กนกพงศ์ หัวคำ</span><br>A coder beginner</h1>
+            </div>
+        </div>
+    </div>
+    <!-- about-->
+    <div id="About">
+        <div class="contaier">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="aboutme-sub">About Me</h1>
+                    <p class="about-text">เกี่ยวกับฉันเป็นคนที่มีความชัดเจนที่จะไม่ได้ใช้งานอย่างน้อยกว่าเป็นคนที่มีความชัดเจนที่จะไม่ได้ใช้ง</p>
+
+                    <div class="aboutme-tab">
+                        <p class="aboutme-tablinks active-link" onclick="opentab('skills')">ความสามารถ</p>
+                        <p class="aboutme-tablinks" onclick="opentab('exp')">ประสบการณ์</p>
+                        <p class="aboutme-tablinks" onclick="opentab('education')">การศึกษา</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>    
+                            <li><span>Web development</span><br>สร้างเว็บไซต์ด้วย HTML,Css และ JavaScript</li>
+                            <li><span>MC</span><br>เป็นพิธีกรในงานต่างๆ</li>
+                            <li><span>Beatbox</span><br>บีทบอกซ์</li>
+                        </ul>
+                    </div>
+                    <div class='tab-contents' id="exp">
+                        <ul>
+                            <li><span>Be an MC</span><br>เป็นพิธีกรประจำ ของสภานักเรียน</li>
+                            <li><span>FrontEnd development</span><br>ทำเว็บไซต์ด้วย HTML Css และ JavaScript</li>
+                            <li><span>Student Council</span><br>ทำงานช่วยเหลือโรงเรียนทั้งภายนอก และภายในสถานศึกษา</li>
+                        </ul>
+                    </div>
+                    <div class='tab-contents' id="education">
+                        <ul>
+                            <li><span>ระดับอนุบาล</span><br>โรงเรียนคริสเตียนบริการ ธนบุรี</li>
+                            <li><span>ประถมศึกษา</span><br>โรงเรียนอนุราชประสิทธิ์</li>
+                            <li><span>มัธยมศึกษา</span><br>โรงเรียนเตรียมอุดมศึกษาพัฒนาการ นนทบุรี</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- survices-->
+
+    <div id="survices">
+        <div class="container">
+            <h1 class="sub-title">My survices</h1>
+            <div class="survices-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-microphone"></i>
+                    <h2>Be an MC</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-face-surprise"></i>
+                    <h2>Beatbox</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- portfolio-->
+    <div id="Portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/images/work1.png">
+                    <div class="layer">
+                        <h3>AW</h3>
+                        <p>My mock-up online shopping platform.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.png">
+                    <div class="layer">
+                        <h3>POP BAS</h3>
+                        <p>PopCat inspired website that use my face instead of the cat.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.png">
+                    <div class="layer">
+                        <h3>Sudoku Solver</h3>
+                        <p>A program that can solve Sudoku game using python.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work4.jpg">
+                    <div class="layer">
+                        <h3>To do list</h3>
+                        <p>A to-do-list project that you can check what you have done and mark what you have to do.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+ 
+    <!-- contact-->
+    <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact</h1>
+                    <p><i class="fa-solid fa-envelope"></i>      Basbas.5545@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>      092-650-8496 / 062-975-2024</p>
+                    <div class="social-icon">
+                        <a href="https://web.facebook.com/basy.naja.98"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/delsin_z/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+                    </div>
+                    <a href="images/my port.pdf" download class="btn btn2">Download Portfolio</a>
+                </div>
+                <div class="contact-right">
+                    <form name='submit-to-google-sheet'>
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message"rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class='btn btn2'>submit</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="ending">
+            <p><i class="fa-solid fa-cannabis"></i>This website made for educational.</p>
+        </div>
+    </div>
+    
+    <!-- scripts-->
+<script>
+    var tablinks = document.getElementsByClassName('aboutme-tablinks');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }    
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemenu2 = Document.getElementById('sidemenu');
+    function openmenu(){
+        sidemenu.style.right = '0';
+    }
+    function closemenu(){
+        sidemenu.style.right = '-200px';
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzhkkNgVgAe5I1ZObEeCL_IzEfXzOIctlTl7gr7Ktaj5HHb5fXrSe8ANucPUw4ERDwI/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>
