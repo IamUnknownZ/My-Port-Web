@@ -219,7 +219,7 @@ body {
 .work img {
     width: 100%;
     border-radius: 10px;
-    display: ;
+    display: block;
     transition: transform 0.5s;
 }
 .layer {
@@ -435,7 +435,7 @@ nav .fa-solid{
         flex-basis: 100%;
      }
      .contact-left{
-
+        
      }
      .ending{
         font-size: 14px;
