@@ -119,12 +119,6 @@
                 </div>
             </div>
         </div>
-
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
     
     <!-- portfolio-->
@@ -235,16 +229,6 @@
         sidemenu.style.right = '-200px';
     }
 </script>
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzhkkNgVgAe5I1ZObEeCL_IzEfXzOIctlTl7gr7Ktaj5HHb5fXrSe8ANucPUw4ERDwI/exec'
-    const form = document.forms['submit-to-google-sheet']
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-    })
-</script>
+
 </body>
 </html>
