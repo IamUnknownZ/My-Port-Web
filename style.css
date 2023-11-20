@@ -430,4 +430,7 @@ nav .fa-solid{
     .contact-right {
         display: none;
     }
+    #about{
+        text-align : center;
+    }
 }
