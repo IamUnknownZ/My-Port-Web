@@ -430,4 +430,10 @@ nav .fa-solid{
     .contact-right {
         display: none;
     }
+    #about{
+        text-align: center;
+    }
+    .about-col-1 img{
+        margin-bottom:-20px;
+    }
 }
