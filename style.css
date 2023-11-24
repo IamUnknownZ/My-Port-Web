@@ -415,11 +415,11 @@ nav .fa-solid{
      .header-text p{
         color: #1a43bf;
      }
-     .contact-left,{
+     .contact-left{
         flex-basis: 100%;
      }
-     .contact-left{
-        
+     .contact-left p{
+        font-size: small;
      }
      .ending{
         font-size: 14px;
